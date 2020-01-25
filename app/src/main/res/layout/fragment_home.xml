@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/today"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:layout_gravity="center_horizontal">
+
+            <com.txusballesteros.widgets.FitChart
+                android:id="@+id/fitchart"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                app:animationMode="overdraw"
+                app:backStrokeColor="#00ff00"
+                app:strokeSize="10dp"
+                app:valueStrokeColor="#ff0000" />
+
+            <TextView
+                android:id="@+id/steps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:text="600"
+                android:textColor="@android:color/black"
+                android:textSize="48sp" />
+
+            <TextView
+                android:id="@+id/steps_target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="42dp"
+                android:text="/6000 Steps"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:layout_margin="16dp">
+
+            <ImageView
+                android:id="@+id/distance_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_directions_walk_white_18dp"
+                android:background="@android:color/darker_gray"
+                />
+
+            <TextView
+                android:id="@+id/distance_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/distance_imageview"
+                android:text="0.5"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/distance_textview"
+                android:text="Miles"
+                android:textSize="16sp"
+                />
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_fireplace_white_18dp"
+                android:background="@android:color/darker_gray"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/distance_imageview"
+                android:text="80"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/distance_textview"
+                android:text="kcal"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_alarm_white_18dp"
+                android:background="@android:color/darker_gray"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/distance_imageview"
+                android:text="60"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/distance_textview"
+                android:text="Min"
+                android:textSize="16sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
