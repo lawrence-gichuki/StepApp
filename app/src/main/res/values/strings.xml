@@ -2,7 +2,6 @@
     <string name="app_name">Fitness App</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="today">Today</string>
     <string name="week">Week</string>
     <string name="profile">Profile</string>
@@ -28,6 +27,8 @@
     <string name="gender">Gender</string>
     <string name="weight">Weight</string>
     <string name="height">Height</string>
+    <string name="report">Report</string>
+    <string name="settings">Settings</string>
 
 
     <string-array name="gender">

@@ -3,12 +3,4 @@
 
     <dimen name="widget_margin">8dp</dimen>
 
-    <dimen name="textview_margin">16dp</dimen>
-    <dimen name="textview_padding">16dp</dimen>
-
-    <dimen name="imageview_margin">16dp</dimen>
-    <dimen name="imageview_padding">16dp</dimen>
-
-    <dimen name="group_view_margin">16dp</dimen>
-
 </resources>
