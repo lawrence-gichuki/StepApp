@@ -5,10 +5,16 @@ import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+
+import java.util.Objects;
 
 
 /**
@@ -24,6 +30,7 @@ public class SettingsFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
     public SettingsFragment() {
         // Required empty public constructor
     }
@@ -56,6 +63,34 @@ public class SettingsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_settings, container, false);
+
+        View rootView = inflater.inflate(R.layout.fragment_settings, container, false);
+
+        //Gender
+        Spinner spinner = rootView.findViewById(R.id.gender);
+        // Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter<CharSequence> adapter;
+        adapter = ArrayAdapter.createFromResource(Objects.requireNonNull(getContext()),
+                R.array.gender, android.R.layout.simple_spinner_item);
+        // Specify the layout to use when the list of choices appears
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        // Apply the adapter to the spinner
+        spinner.setAdapter(adapter);
+
+        //Steps Goal
+        Spinner spinnerSteps = rootView.findViewById(R.id.steps);
+        // Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter<CharSequence> adapterSteps;
+        adapterSteps = ArrayAdapter.createFromResource(Objects.requireNonNull(getContext()),
+                R.array.steps, android.R.layout.simple_spinner_item);
+        // Specify the layout to use when the list of choices appears
+        adapterSteps.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        // Apply the adapter to the spinner
+        spinnerSteps.setAdapter(adapterSteps);
+
+
+        return rootView;
     }
+
+
 }
