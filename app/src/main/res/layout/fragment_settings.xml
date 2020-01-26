@@ -43,7 +43,8 @@
             android:layout_height="wrap_content"
             android:src="@drawable/baseline_person_white_18dp"
             android:background="@android:color/darker_gray"
-            android:layout_margin="16dp"/>
+            android:layout_margin="16dp"
+            android:contentDescription="@string/gender"/>
 
         <androidx.appcompat.widget.AppCompatSpinner
             android:id="@+id/gender"
@@ -70,7 +71,8 @@
             android:layout_height="wrap_content"
             android:src="@drawable/baseline_directions_walk_white_18dp"
             android:background="@android:color/darker_gray"
-            android:layout_margin="16dp"/>
+            android:layout_margin="16dp"
+            android:contentDescription="@string/walking"/>
 
         <androidx.appcompat.widget.AppCompatSpinner
             android:id="@+id/steps"
@@ -96,7 +98,8 @@
             android:layout_height="wrap_content"
             android:src="@drawable/baseline_show_chart_white_18dp"
             android:background="@android:color/darker_gray"
-            android:layout_margin="16dp"/>
+            android:layout_margin="16dp"
+            android:contentDescription="@string/weight"/>
 
 
 
@@ -104,8 +107,8 @@
             android:id="@+id/weight"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:hint="Weight (KG)"
-            android:inputType="number"/>
+            android:hint="@string/weight_kg"
+            android:inputType="number" />
 
 
     </LinearLayout>
@@ -125,13 +128,14 @@
             android:layout_height="wrap_content"
             android:src="@drawable/baseline_height_white_18dp"
             android:background="@android:color/darker_gray"
-            android:layout_margin="16dp"/>
+            android:layout_margin="16dp"
+            android:contentDescription="@string/height"/>
 
         <EditText
             android:id="@+id/height"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:hint="Height (CM)"
+            android:hint="@string/height_cm"
             android:inputType="number"/>
 
 
@@ -143,7 +147,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
-            android:text="Save"/>
+            android:text="@string/save"/>
 
     </LinearLayout>
 </LinearLayout>

@@ -47,7 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
-                android:text="600"
+                android:text="@string/default_steps"
                 android:textColor="@android:color/black"
                 android:textSize="48sp" />
 
@@ -57,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_marginTop="42dp"
-                android:text="/6000 Steps"
+                android:text="@string/steps_target"
                 android:textSize="16sp" />
 
         </FrameLayout>
@@ -74,6 +74,7 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/baseline_directions_walk_white_18dp"
                 android:background="@android:color/darker_gray"
+                android:contentDescription="@string/walking"
                 />
 
             <TextView
@@ -81,7 +82,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/distance_imageview"
-                android:text="0.5"
+                android:text="@string/default_distance"
                 android:textColor="@android:color/black"
                 android:textSize="24sp"
                 />
@@ -90,7 +91,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/distance_textview"
-                android:text="Miles"
+                android:text="@string/miles_uom"
                 android:textSize="16sp"
                 />
 
@@ -102,13 +103,14 @@
                 android:src="@drawable/baseline_fireplace_white_18dp"
                 android:background="@android:color/darker_gray"
                 android:layout_centerHorizontal="true"
+                android:contentDescription="@string/burn_calories"
                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/distance_imageview"
-                android:text="80"
+                android:text="@string/default_calories"
                 android:textColor="@android:color/black"
                 android:textSize="24sp"
                 android:layout_centerHorizontal="true"
@@ -118,7 +120,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/distance_textview"
-                android:text="kcal"
+                android:text="@string/calories_uom"
                 android:textSize="16sp"
                 android:layout_centerHorizontal="true"
                 />
@@ -131,13 +133,14 @@
                 android:background="@android:color/darker_gray"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="16dp"
+                android:contentDescription="@string/active_time"
                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/distance_imageview"
-                android:text="60"
+                android:text="@string/default_time"
                 android:textColor="@android:color/black"
                 android:textSize="24sp"
                 android:layout_alignParentEnd="true"
@@ -148,7 +151,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/distance_textview"
-                android:text="Min"
+                android:text="@string/minutes"
                 android:textSize="16sp"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="16dp"
