@@ -6,6 +6,7 @@
     android:orientation="vertical"
     android:background="@color/grey"
     tools:context=".SettingsFragment"
+
     >
 
     <LinearLayout
@@ -26,8 +27,6 @@
         android:text="@string/profile"
         android:textColor="@android:color/black"
         android:textSize="24sp" />
-
-
 
     <LinearLayout
         android:layout_width="match_parent"

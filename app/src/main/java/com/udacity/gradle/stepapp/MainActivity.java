@@ -3,6 +3,7 @@ package com.udacity.gradle.stepapp;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -88,6 +89,10 @@ public class MainActivity extends AppCompatActivity {
                                                 ? 0
                                                 : dataSet.getDataPoints().get(0).getValue(Field.FIELD_STEPS).asInt();
                                 Log.i(TAG, "Total steps: " + total);
+
+                                TextView textView = findViewById(R.id.steps);
+                                textView.setText(total + "");
+
                             }
                         })
                 .addOnFailureListener(
